@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class Author extends Component {
-  render (){
+  render() {
     return (
-     <div>{this.props.allAuthors.map(author => <p>{author}</p>)}</div>
+      <div>{this.props.allAuthors.map(author => <p>{author}</p>)}</div>
     )
   }
 }
