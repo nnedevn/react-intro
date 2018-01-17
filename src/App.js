@@ -8,12 +8,10 @@ import Authors from './Authors';
 
 class Post extends Component {
   render() {
-    let allComments = [
-      <Comment body={this.props.comments[0]} />,
-      <Comment body={this.props.comments[1]} />,
-      <Comment body={this.props.comments[2]} />
-    ]
-
+    let allComments = this.props.comments.map(comment => {
+      return <Comment key={this.props.comments.indexOf(comment)} body={comment} />
+    });
+    
     return (
       <div className="App">
         <h1>{this.props.title}</h1>

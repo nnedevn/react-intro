@@ -4,7 +4,7 @@ import Author from './Author';
 class Authors extends Component {
   render() {
     let allAuthors = this.props.allAuthors.map(author => {
-      return <Author singleAuthor={author} />
+      return <Author key={author.name} singleAuthor={author} />
     });
 
     return (
