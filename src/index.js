@@ -11,7 +11,6 @@ let post = {
   comments: ['First', 'Second', 'Tertiary']
 }
 
-
 ReactDOM.render(<Post 
   title = {post.title}
   author = {post.author}
