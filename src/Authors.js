@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import Author from './Author';
 
-class Author extends Component {
+class Authors extends Component {
   render() {
+    let allAuthors = this.props.allAuthors.map(author => {
+      return <Author singleAuthor={author} />
+    });
+
     return (
-      <div>{this.props.allAuthors.map(author => <p>{author}</p>)}</div>
+      <div className="authors">
+        {allAuthors}
+      </div>
     )
   }
 }
 
-export default Author
+export default Authors
