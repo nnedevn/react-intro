@@ -10,8 +10,10 @@ let post = {
   body: 'Large',
   comments: ['First', 'Second', 'Tertiary']
 }
+let authors = ['Stealthy Stedosaurus','Tiny Rex', 'Massive Mastodon', 'Rapping Raptor']
 
 ReactDOM.render(<Post 
+  allAuthors = {authors}
   title = {post.title}
   author = {post.author}
   body = {post.body}

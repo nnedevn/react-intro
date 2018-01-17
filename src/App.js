@@ -4,7 +4,7 @@ import './App.css';
 //Load Comment component
 import './Comment';
 import Comment from './Comment';
-
+import Authors from './Authors';
 
 class Post extends Component {
   render() {
@@ -17,7 +17,7 @@ class Post extends Component {
     return (
       <div className="App">
         <h1>{this.props.title}</h1>
-        <h3>by {this.props.author}</h3>
+        <Authors allAuthors = {this.props.allAuthors}/>
         <p>{this.props.body}</p>
         <h3>Comments: </h3>
         {allComments}
